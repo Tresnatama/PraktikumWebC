@@ -1,2 +1,0 @@
-# PraktikumWebC
-Repository dari Praktikum 
