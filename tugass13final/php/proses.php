@@ -11,9 +11,10 @@ if(isset($_POST['login'])){
     $result = mysqli_query($conn,$sql);
     if(mysqli_num_rows($result)>0){
         while($row = mysqli_fetch_assoc($result)){
+            $_SESSION['id'] = $row['id'];
             $_SESSION['nama'] = $row['nama'];
             $_SESSION['level'] = $row['level'];
-            header('Location: ../index.php');
+            header('Location: ../index.php?value=profil');
         }
     }else{
         echo"<script>alert('Username atau password salah!');document.location.href='../login.php'</script>";

@@ -1,0 +1,168 @@
+/* Memanipulasi seluruh element bawaan css */
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; /* membuat semua container memiliki ukuran yang konsisten tanpa dapat dipengaruhi oleh padding*/
+}
+/*Global text (Testing)*/
+html {
+  font-size: 18px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+/* Koding untuk menghilangkan bug pada modal */
+.modal-open {
+	overflow-y: auto !important;
+	padding-right: 0 !important;
+}
+
+.modal-scrollbar-measure {
+	overflow: hidden;
+}
+.errorMessage .ui-dialog-titlebar{
+	background-color: #17a2b8;
+}
+a {
+	display: block;
+}
+/* MENU FIXED TOP */ 
+#mainNav{
+	font-weight: 700;
+  	font-size: 0.9rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+}
+#mainNav .navbar-brand:hover {
+    color: #b2ebf2 !important
+}
+.bg-transparent{
+	background-color: rgba(0,0,0, 0.5) !important;
+	transition: 0.5s !important;
+	border-bottom: 0px solid black;
+}
+
+.bg-transparent.scrolled{
+	background-color: #17a2b8 !important;
+	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.6);
+	border-bottom-right-radius: 60px;
+	border-bottom-left-radius: 60px;
+}
+
+/* BODY */
+.jumbotron{
+	margin-bottom: 0px;
+	background-image:url("../images/mapsjumbo.jpg");
+	background-position: center center;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.jumbotron-container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+hr.divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: #006064;
+}
+.triangle{
+	height: 150px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+	bottom: 0px;
+	background-image: url("../images/triangle.png");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* BAGIAN SECTION UNIV */
+.univ{
+	height: 100%;
+	background-color: #e1f5fe;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	border-radius: 20px;
+	transition: 0.4s;
+}
+.univ a{
+	padding: 30px 20px;
+	text-decoration: none;
+	color: #0097a7;
+}
+.univ:hover{
+	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.6);
+}
+.univ a:hover{
+	color: #00838f;
+}
+#univ{
+	background-color: #b2ebf2;
+}
+.univ .fa{
+	font-size: 68px;
+}
+.univcard{
+	display: flex;
+}
+.univimg{
+	margin: 0px;
+	width: 48px;
+	height: 48px;
+}
+.univtext{
+	width: 100%;
+	align-items: center;
+}
+.univimg img{
+	width: 100%;
+	height: 100%;
+}
+/* BAGIAN DAFTAR */
+#penawaran{
+	background-color: #f5f5f5;
+}
+/* SECTION = ABOUT US */
+
+#aboutus{
+	padding: 60px 0;
+	background-color: #b2ebf2;
+	position: relative;
+}
+.img-about{
+	overflow: hidden;
+	border-radius: 50%;
+	border: 3px solid #00838f;
+	height: 250px;
+	width: 250px;
+	line-height: 145px;
+}
+.img-about img{
+	width: 300px;
+	height: 300px;
+}
+/* BAGIAN FOOTER */
+#footer{
+	background-color: #00838f;
+	color: white;
+}
