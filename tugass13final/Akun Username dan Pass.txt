@@ -1,0 +1,21 @@
+Admin 
+username : 123456789
+password : admin123
+
+=======================
+Mahasiswa1 Yusha
+username : 1708561044
+password : mahasiswa123
+
+Mahasiswa2 Dharma
+username : 1708561045
+password : mahasiswa123
+
+=======================
+Dosen1 muliantara:
+username : 198006162005011001
+password : dosen123
+
+Dosen2 hendra:
+username : 198812282014041001
+password : dosen123
